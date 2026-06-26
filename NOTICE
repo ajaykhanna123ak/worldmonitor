@@ -1,0 +1,30 @@
+Aperture
+Copyright (C) 2026 Ajay Khanna
+
+This product, "Aperture", is a derivative work based on:
+
+    World Monitor — Real-time global intelligence dashboard
+    Copyright (C) 2024-2026 Elie Habib
+    https://github.com/koala73/worldmonitor
+
+World Monitor is licensed under the GNU Affero General Public License,
+version 3.0 (AGPL-3.0). As a derivative work, Aperture is likewise licensed
+under the AGPL-3.0. The full license text is in the LICENSE file.
+
+In accordance with the AGPL-3.0:
+
+  * The original copyright and license notices are retained (this NOTICE
+    and the LICENSE file).
+  * Aperture remains free/open-source software under the same AGPL-3.0 terms.
+  * The complete, corresponding source code for Aperture — including all
+    modifications — is publicly available at:
+
+        https://github.com/ajaykhanna123ak/worldmonitor
+
+  * Users who interact with a running instance of Aperture over a network are
+    entitled to receive that source (AGPL-3.0 Section 13).
+
+A summary of changes made relative to the upstream project is in CHANGES.md.
+
+"Aperture" is the product/brand name used by Ajay Khanna for this distribution.
+It does not imply endorsement by, or affiliation with, the original authors.

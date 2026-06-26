@@ -536,7 +536,7 @@
         "needsKeys": "Konfigurieren Sie API-Schlüssel, um Funktionen freizuschalten",
         "some": "Für einige Funktionen sind API-Schlüssel erforderlich"
       },
-      "skipSetup": "Überspringen Sie das Setup — eine einzige World Monitor-Lizenz schaltet alles frei. Tragen Sie sich in die Warteliste ein, um frühzeitigen Zugang zu erhalten.",
+      "skipSetup": "Überspringen Sie das Setup — eine einzige Aperture-Lizenz schaltet alles frei. Tragen Sie sich in die Warteliste ein, um frühzeitigen Zugang zu erhalten.",
       "summary": {
         "desktop": "Desktop-Modus",
         "web": "Webmodus (schreibgeschützt, serververwaltete Anmeldeinformationen)",
@@ -667,11 +667,11 @@
         "dividerOr": "ODER",
         "register": {
           "title": "Reservieren Sie Ihren Platz",
-          "description": "Wir bereiten den Start von World Monitor-Lizenzen vor. Melden Sie sich jetzt an und seien Sie der Erste — frühe Mitglieder erhalten bevorzugten Zugang und Gründermitglied-Preise.",
+          "description": "Wir bereiten den Start von Aperture-Lizenzen vor. Melden Sie sich jetzt an und seien Sie der Erste — frühe Mitglieder erhalten bevorzugten Zugang und Gründermitglied-Preise.",
           "submitBtn": "Auf die Warteliste setzen"
         }
       },
-      "shellTitle": "World Monitor – Einstellungen",
+      "shellTitle": "Aperture – Einstellungen",
       "shellSearchPlaceholder": "Einstellungen durchsuchen…",
       "shellCancel": "Abbrechen",
       "shellSaveClose": "Speichern & Schließen",
@@ -3020,10 +3020,10 @@
     "copyCoordinates": "Koordinaten kopieren"
   },
   "shell": {
-    "documentTitle": "World Monitor — Dashboard für globale Echtzeitinformationen",
+    "documentTitle": "Aperture — Dashboard für globale Echtzeitinformationen",
     "metaDescription": "Echtzeit-Plattform für globale Informationen. In WIRED vorgestellt. Von über 2 Millionen Menschen in 190 Ländern genutzt. Konflikte, Märkte, Militär, OSINT in einer Ansicht.",
     "offlineTitle": "Sie sind offline",
-    "offlineMessage": "World Monitor benötigt eine Internetverbindung für Echtzeit-Nachrichtendaten.",
+    "offlineMessage": "Aperture benötigt eine Internetverbindung für Echtzeit-Nachrichtendaten.",
     "offlineRetry": "Erneut versuchen"
   },
   "widgets": {
@@ -3094,7 +3094,7 @@
   },
   "premium": {
     "pro": "PRO",
-    "lockedDesc": "Erfordert einen World Monitor Lizenzschlüssel",
+    "lockedDesc": "Erfordert einen Aperture Lizenzschlüssel",
     "signInToUnlock": "Melden Sie sich an, um Premium-Funktionen freizuschalten",
     "signIn": "Anmelden zum Freischalten",
     "upgradeDesc": "Upgrade auf Pro für vollständigen Zugriff auf Premium-Analysen",

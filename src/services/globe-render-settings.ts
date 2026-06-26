@@ -89,7 +89,8 @@ export function getGlobeTexture(): GlobeTexture {
     const raw = localStorage.getItem(TEXTURE_STORAGE_KEY);
     if (raw === 'topographic' || raw === 'blue-marble') return raw;
   } catch { /* ignore */ }
-  return 'topographic';
+  // Default to the realistic NASA Blue Marble Earth (topographic reads too dark).
+  return 'blue-marble';
 }
 
 export function setGlobeTexture(texture: GlobeTexture): void {
