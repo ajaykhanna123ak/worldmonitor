@@ -4,7 +4,7 @@ export type Theme = 'dark' | 'light';
 export type ThemePreference = 'auto' | 'dark' | 'light';
 
 const STORAGE_KEY = 'worldmonitor-theme';
-const DEFAULT_THEME: Theme = 'dark';
+const DEFAULT_THEME: Theme = 'light';
 
 function resolveThemeColor(theme: Theme, variant: string | undefined): string {
   if (theme === 'dark') return variant === 'happy' ? '#1A2332' : '#0a0f0a';

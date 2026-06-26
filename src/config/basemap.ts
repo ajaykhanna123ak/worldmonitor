@@ -59,10 +59,10 @@ export const MAP_THEME_OPTIONS: Record<MapProvider, { value: string; label: stri
 };
 
 const DEFAULT_THEME: Record<MapProvider, string> = {
-  pmtiles: 'black',
-  auto: 'black',
-  openfreemap: 'dark',
-  carto: 'dark-matter',
+  pmtiles: 'light',
+  auto: 'light',
+  openfreemap: 'positron',
+  carto: 'positron',
 };
 
 export function getMapProvider(): MapProvider {

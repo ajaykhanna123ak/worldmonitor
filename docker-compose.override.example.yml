@@ -1,0 +1,48 @@
+# Copy this to `docker-compose.override.yml` and fill in your (mostly free) keys.
+#   cp docker-compose.override.example.yml docker-compose.override.yml
+# The real override file is gitignored, so your secrets stay local.
+#
+# Each key unlocks a panel that otherwise shows "… data temporarily unavailable":
+#   FINNHUB_API_KEY   -> Markets, Crypto, Premium Backtesting
+#   FRED_API_KEY      -> Macro Stress (indicators / stress index)
+#   EIA_API_KEY       -> Energy Complex, Oil Inventories
+#   GROQ/OPENROUTER   -> WM Analyst (the "Error 404" panel) — or use LLM_API_URL for local Ollama
+#   NASA_FIRMS_API_KEY-> wildfire detections
+#   ACLED_*           -> conflict realtime density
+# No key needed for: earthquakes, weather, natural events, news, prediction markets, cables.
+
+services:
+  worldmonitor:
+    environment:
+      # 🤖 LLM — pick one or both (powers WM Analyst + intelligence assessments)
+      GROQ_API_KEY: ""            # https://console.groq.com (free, 14.4K req/day)
+      OPENROUTER_API_KEY: ""      # https://openrouter.ai (free, 50 req/day)
+
+      # 📊 Markets & Economics
+      FINNHUB_API_KEY: ""         # https://finnhub.io (free tier)
+      FRED_API_KEY: ""            # https://fred.stlouisfed.org/docs/api/api_key.html (free)
+      EIA_API_KEY: ""             # https://www.eia.gov/opendata/ (free)
+
+      # ⚔️ Conflict & Unrest
+      ACLED_EMAIL: ""             # https://acleddata.com (free for researchers)
+      ACLED_PASSWORD: ""          # OAuth — tokens auto-refresh (preferred)
+      ACLED_ACCESS_TOKEN: ""      # Alternative static token (expires every 24h)
+
+      # 🛰️ Earth Observation
+      NASA_FIRMS_API_KEY: ""      # https://firms.modaps.eosdis.nasa.gov (free)
+
+      # ✈️ Aviation
+      AVIATIONSTACK_API: ""       # https://aviationstack.com (free tier)
+      TRAVELPAYOUTS_API_TOKEN: "" # https://travelpayouts.com (flight prices — optional)
+
+      # 🚢 Maritime
+      AISSTREAM_API_KEY: ""       # https://aisstream.io (free)
+
+      # 🔌 Self-hosted LLM (optional — any OpenAI-compatible endpoint, e.g. Ollama)
+      LLM_API_URL: ""             # e.g. http://host.docker.internal:11434/v1/chat/completions
+      LLM_API_KEY: ""
+      LLM_MODEL: ""
+
+  ais-relay:
+    environment:
+      AISSTREAM_API_KEY: ""       # same key as above — the relay needs it too

@@ -178,12 +178,8 @@ export function isProWidgetEnabled(): boolean {
 }
 
 export function isProUser(): boolean {
-  return (
-    isWidgetFeatureEnabled() ||
-    isProWidgetEnabled() ||
-    getAuthState().user?.role === 'pro' ||
-    isEntitled()
-  );
+  // Self-host unlock: all Pro features enabled on this AGPL self-hosted build.
+  return true;
 }
 
 export function getProWidgetKey(): string {

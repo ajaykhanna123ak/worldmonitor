@@ -643,9 +643,11 @@ export class GlobeMap {
     const initH = this.container.clientHeight || window.innerHeight;
 
     const initialTexture = getGlobeTexture();
+    const globeBg = document.documentElement.dataset.theme === 'dark' ? '#070b10' : '#eef2f6';
     globe
       .globeImageUrl(GLOBE_TEXTURE_URLS[initialTexture])
       .backgroundImageUrl('')
+      .backgroundColor(globeBg)
       .atmosphereColor('#4466cc')
       .atmosphereAltitude(0.18)
       .width(initW)
