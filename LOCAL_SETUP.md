@@ -72,6 +72,22 @@ This fork differs from upstream `koala73/worldmonitor`:
 - **Discord community links removed** (notification-channel Discord integration kept).
 - **Repo links point to this fork** instead of upstream.
 
+## Branding & domain
+
+- **Name/wordmark:** "Aperture" (UI wordmark, title, meta, PWA, all locales).
+- **Logo / favicon:** `public/favico/aperture.svg` (mark) and `public/aperture-logo.svg`
+  (wordmark). The legacy raster icons in `public/favico/*.png` are still the
+  upstream art — regenerate them from the SVG when convenient.
+- **Point it at your domain** (one command — swaps only the public host, leaves
+  `api.`/`clerk.`/infra alone):
+
+  ```bash
+  ./scripts/set-domain.sh your-domain.com
+  ```
+
+  Afterwards, review the `Content-Security-Policy` hosts in `index.html` and any
+  Clerk/API/Sentry env if you self-host those services.
+
 ## Note on GitHub Pages
 
 A static host like GitHub Pages **cannot** run the backend in Option B, so the
